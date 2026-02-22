@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncShorts AI | Neural Production</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --apple-bg: #000000;
+            --apple-card: rgba(28, 28, 30, 0.7);
+            --apple-border: rgba(255, 255, 255, 0.12);
+            --apple-text: #f5f5f7;
+            --apple-blue: #0071e3;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--apple-bg);
+            color: var(--apple-text);
+            letter-spacing: -0.015em;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass {
+            background: var(--apple-card);
+            backdrop-filter: saturate(180%) blur(25px);
+            border: 1px solid var(--apple-border);
+        }
+        .apple-button {
+            background-color: var(--apple-blue);
+            color: white;
+            font-weight: 500;
+            border-radius: 980px;
+            transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        .apple-button:hover {
+            background-color: #147ce5;
+            transform: scale(1.02);
+        }
+        .apple-button:active {
+            transform: scale(0.98);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #ffffff 0%, #a1a1a6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        input, textarea {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--apple-border);
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+        input:focus, textarea:focus {
+            border-color: var(--apple-blue);
+            background: rgba(255, 255, 255, 0.08);
+            outline: none;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .mask-video {
+            -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0) 100%);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="antialiased">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

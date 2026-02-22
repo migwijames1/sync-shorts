@@ -1,0 +1,7 @@
+{
+  "name": "10x faster",
+  "description": "Transform a single image into a lip-synced video short with realistic B-roll and optimized YouTube metadata.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
